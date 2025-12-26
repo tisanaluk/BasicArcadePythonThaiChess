@@ -140,6 +140,7 @@ class MyChessGame(arcade.Window):
                 square = arcade.SpriteSolidColor(90, 90, color)
                 square.center_x = 200 + column * 100
                 square.center_y = 100 + row * 100
+                self.squares.append(square)
                 self.board_list.append(square)
 
     def on_draw(self):
